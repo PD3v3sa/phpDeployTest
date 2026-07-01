@@ -1,2 +1,2 @@
 <?php
-echo("cargado server.php... <br>");
+echo("cargado server.php... <br>"); 
