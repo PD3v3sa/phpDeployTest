@@ -20,6 +20,12 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./src/public/
           server-dir: /htdocs/
+      
+      - name: Upload src files (excluding public) to htdocs/src/
+        run: |
+        mkdir temp_src
+        bash -O extglob -c 'cp -r src/!(public) temp_src/'
+        shell: bash
 
       - name: Upload src files (excluding public) to htdocs/src/
         run: |
