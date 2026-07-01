@@ -12,3 +12,4 @@ if (file_exists(__DIR__ . '/../config/db.php')) {
 require_once $configPath . 'db.php';
 require_once $configPath . 'server.php';
 
+phpinfo();
